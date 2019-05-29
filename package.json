@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --watch src --exec \"babel-node src/index.js --presets=@babel/preset-env\"",
     "build": "rimraf dist && babel src -s -d dist --presets=@babel/preset-env",
-    "production": "node dist"
+    "production": "node dist",
+    "server": "node server/index.js"
   },
   "keywords": [
     "koa2",
@@ -18,6 +19,7 @@
   "dependencies": {
     "@babel/runtime": "^7.4.5",
     "co": "^4.6.0",
+    "koa": "^2.7.0",
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
